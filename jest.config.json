@@ -1,0 +1,51 @@
+{   
+
+  "moduleFileExtensions": [
+
+      "js",
+
+      "json",
+
+      "vue"
+
+  ],
+
+  "transform": {
+
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+
+  },
+
+  "snapshotSerializers": [
+
+      "<rootDir>/node_modules/jest-serializer-vue"
+
+  ],
+
+  "moduleNameMapper": {
+
+      "^@/(.*)$": "<rootDir>/src/$1"
+
+  },
+
+  "transformIgnorePatterns": [
+
+      "node_modules/(?!(yourModuleName))"
+
+  ],
+
+  "reporters": [
+
+      "default",
+
+      ["./node_modules/jest-html-reporter", {
+
+      "pageTitle": "Test Report"
+
+      }]
+
+  ]
+
+}
